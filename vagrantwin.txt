@@ -1,0 +1,59 @@
+fichier CSV
+windows server
+1.create user et mots de passe -local service
+2.connect to virtual machine
+find Ip address 
+change langage
+
+connexion VMdistante
+
+ip 192.168.10.0
+192.168.10.4
+127.0.0.1:60001
+
+----installation language
+
+cmd: Install-Language -Language fr-FR
+go to powershell - 
+cmd: Install-Language -Language fr-FR
+
+
+1.recuper fichier csv copier coller dans VM-windows bureau à distance.
+dans VM bureau, col ficiher CSV
+
+disque C mappe dans mon VM
+afficiehr des options resource local, clické en Autre, 
+Bureau distance - ok, autre, connection, lecteur mappé, 
+inside lecteur mappe: ce PC dans Disque C-
+go to users, dossier avec nom, go desktop, fetch csv, 
+
+
+
+Os admin - POWERSHELL Vm 
+in powershell to change password - 
+get -Adduser
+password -name *
+
+Command:
+
+WindownsFeature -Name AD-Domain-Services -IncludeManagementTools
+Install-ADDSForest -DomainName "Simplon.Lab" -DomainNetbiosname "SIMPLON" 
+-InstaDNS:$true
+
+retrogation de controller, domaine normale pour viré AD
+(reverse engineering - installer reinverse) 
+
+
+install wordpress
+https://wordpress.org/download/ - download dans votre ordi
+ekw.devops2024@gmail.com
+
+https://elobernard.github.io/eloisa_DEVOPS/
+
+http://localhost/wordpress
+
+https://github.com/ekw2024/devopsekw.git
+
+
+
+automatisation csv
